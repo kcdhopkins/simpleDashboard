@@ -1,0 +1,98 @@
+.syndio-black{
+    background-color: #373737;
+    height: 70px;
+}
+
+.logo-size{
+    height: 40px;
+    width: auto;
+}
+
+.dropdown-size{
+    height: 20px;
+    width: auto;
+}
+
+.dropdown-buttons{
+    background-color: #262626;
+    width:200px;
+    height: 40px;
+    color: white;
+    font-size: 14px;
+}
+
+.border-outline{
+    border: 1px solid #0D8B7f
+}
+
+button{
+    border:none;
+}
+
+.menu-position{
+    position: absolute;
+    background-color: white;
+    width: 200px;
+    z-index: 2;
+    font-size:14px;
+}
+
+.box-shadow{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+/* Small break-point */
+@media screen and (max-width: 576px) {
+
+    .move-left{
+        margin-left: 24px;
+    }
+    
+    .menu-position{
+        position: absolute;
+        background-color: white;
+        width: 200px;
+        z-index: 2
+    }
+
+    .move-right{
+        position: absolute;
+        right: 24px;
+    }
+}
+/* Medium break-point */
+@media screen and (min-width: 577px) {
+    .move-left{
+        margin-left: 24px;
+    }
+    
+    .move-right{
+        position: absolute;
+        right: 24px;
+    }
+
+    .menu-position{
+        position: absolute;
+        background-color: white;
+        width: 200px;
+        z-index: 2
+    }
+}
+/* Large break-point */
+@media screen and (min-width: 1200px) {
+    .move-left{
+        margin-left: 24px;
+    }
+    
+    .move-right{
+        position: absolute;
+        right: 24px;
+    }
+
+    .menu-position{
+        position: absolute;
+        background-color: white;
+        width: 200px;
+        z-index: 2
+    }
+}
