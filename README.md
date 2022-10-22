@@ -1,4 +1,6 @@
-<<<<<<< HEAD
+# This site can be viewed at 
+[https://nimble-dusk-aa225f.netlify.app](https://nimble-dusk-aa225f.netlify.app)
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -69,7 +71,3 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-=======
-# simpleDashboard
-Simple dashboard
->>>>>>> ef513b20d7bf23e9518e2cfba8324084eed8c02e
