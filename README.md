@@ -1,0 +1,2 @@
+# simpleDashboard
+Simple dashboard
