@@ -45,7 +45,7 @@ const Statistics = () => {
         <div className={`tabs next-tab ${active === "race" ? "active" : "inactive"}`} onClick = {()=>setActive("race")}>Race</div>
       </div>
       <div className='second-layer-bg'>
-        <div className="move-layout-left">
+        <div className="move-layout-left h-100">
           {active === "gender" && <Gender pageData={pageData?.gender}/>}
           {active === "race" && <Race pageData={pageData?.race}/>}
         </div>

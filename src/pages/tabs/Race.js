@@ -1,10 +1,11 @@
-import React from 'react'
+import React from "react";
 
 const Race = () => {
-  
   return (
-    <div></div>
-  )
-}
+    <div className='d-flex justify-content-center align-items-center mt-3'>
+      <span>Coming Soon</span>
+    </div>
+  );
+};
 
-export default Race
+export default Race;
