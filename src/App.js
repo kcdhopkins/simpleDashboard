@@ -9,7 +9,7 @@ ping()
 
 function App() {
   return (
-    <div className="container-fluid">
+    <div className="container-fluid max-height">
       <BrowserRouter>
           <Header/>
           <Routes />

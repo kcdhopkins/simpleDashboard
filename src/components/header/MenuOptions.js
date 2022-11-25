@@ -1,18 +1,17 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { menuItem } from "../../constants/headerConstants";
 
-const MenuOptions = ({ data, groupSelection, setGroupSelection, setShow }) => {
+const MenuOptions = () => {
+  const data = [{site:'https://zen-torvalds-515ad2.netlify.app/', label: "time-zone-manager", name: "Time Zone Manager"}]
   const groups = () => {
-    return data.map((data, index) => {
+    return data.map((obj, index) => {
       return (
-        <Link to={`/?group=${data.id}`} key={"item-"+index}>
+        <Link to={{pathname:obj.site}} target="_blank" key={"item-"+index}>
             <span
               className="dropdown-item no-link-habits"
-              key={`${index}${data.label}`}
-              onClick={() => {setGroupSelection(data.label); setShow(false)}}>
-              <span className={groupSelection === data.label ? "text-muted" : ""}>
-                {menuItem[data.label]}
+              key={`${index}${obj.label}`}>
+              <span>
+                {obj.name}
               </span>
             </span>
           </Link>
@@ -23,12 +22,8 @@ const MenuOptions = ({ data, groupSelection, setGroupSelection, setShow }) => {
     <div className='menu-position box-shadow p-2 over' data-testid="drop-down">
       <div className='dropdown-item'>
         <span
-          className={
-            !groupSelection || groupSelection === "Change Group"
-              ? "text-muted"
-              : ""
-          }>
-          CHANGE GROUP
+          className="text-muted">
+          Other React Sites
         </span>
       </div>
       {groups()}
