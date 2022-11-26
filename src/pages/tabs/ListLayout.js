@@ -2,12 +2,14 @@ import React, { useEffect, useState } from "react";
 import { getTabData } from "../../services/work-data-service";
 import "../styles/gender.css";
 
-const ListLayout = ({url}) => {
+const ListLayout = ({url, setLoading}) => {
   const [pageData, setPageData] = useState({status: 0, data:[]})
   
   const getPageData = async ()=>{
+    setLoading(true)
     const data = await getTabData(url)
     setPageData(data)
+    setLoading(false)
   }
   useEffect(()=>{
     getPageData(url)
