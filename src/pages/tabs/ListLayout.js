@@ -14,12 +14,19 @@ const ListLayout = ({url}) => {
   // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [])
 
-  const display = pageData.data.map((statement, index) => {
+  const display = pageData?.data.map((dataObj, index) => {
+      let bulletDisplay = []
+      if(dataObj?.bullets?.length){
+        bulletDisplay = dataObj.bullets.map((bullet, index)=>{
+          return <li key={`${index}-bullet`}>{bullet}</li>
+        })
+      }
       return (
         <div className='custom-card' key={`statement-${index}`}>
-          {statement?.title && <div>{statement.label}</div>}
-          <div className="label-style">{statement.title}</div>
-          <div>{statement.statement}</div>
+          {dataObj?.title && <h4>{dataObj.title}</h4>}
+          {dataObj?.label && <h6 className="label-style"><i>{dataObj.label.toUpperCase()}</i></h6>}
+          {dataObj?.statement && <div>{dataObj.statement}</div>}
+          {!!bulletDisplay?.length && <ul className="">{bulletDisplay}</ul>}
         </div>
       );
   });
